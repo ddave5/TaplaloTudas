@@ -1,0 +1,59 @@
+.nav {
+  position: fixed;
+  top: 20px;
+  width: 80%;
+  height: 4rem;
+  background: var(--color-bg-variant);
+  left: 10%;
+  border-radius: 64px;
+  padding: 8px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1001;
+  font-size: 20px;
+  transition: top 0.3s;
+}
+
+.logo__container {
+  width: 10%;
+}
+
+.logo__container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
+  width: 80%;
+  padding-right: 1rem;
+}
+
+.menu__container a {
+  position: relative;
+}
+
+.menu__container a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-font);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu__container a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+

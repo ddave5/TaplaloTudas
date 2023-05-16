@@ -1,0 +1,145 @@
+.contract__containter {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.contract__containter > .subtitle, .contract__containter > .title{
+  color: var(--color-bg);
+}
+
+.postcard__container {
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.postcard__form {
+  width: 60%;
+  position: inherit;
+  left: 20%;
+  border: 1px solid black;
+  filter: drop-shadow(3px 4px 3px #000);
+}
+
+.postcard__form.refresh {
+  animation: sendEmail 5s alternate forwards;
+  transition: all 0.5s;
+}
+
+.postcard__frame{
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    red 10px,
+    white 10px,
+    white 20px,
+    blue 20px,
+    blue 30px,
+    white 30px,
+    white 40px
+  );
+  border: .5rem solid white;
+}
+
+.postcard__body {
+  background: white;
+  margin: .5rem;
+  padding: 1rem;
+  height: 50vh;
+  color: var(--color-bg);
+  position: relative;
+}
+
+.stamp {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 110px;
+  height: 140px;
+  border: 1px solid black;
+}
+
+.postcard__title {
+  color: var(--color-bg);
+}
+
+.postcard__content {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+}
+
+.message__container {
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  border-right: 1px solid black;
+  padding: .5rem;
+  resize: none;
+  height: 80%;
+  width: 100%;
+}
+
+.postcard__attributes {
+  margin-top: 7rem;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.input__name, .input__email, .input__subject {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+
+.send__button__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.send__button {
+  width: 30%;
+  padding: 10px;
+  border-radius: 16px;
+  background: var(--color-bg);
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes sendEmail {
+  0%, 100%{
+    display: block;
+    left: 20%;
+  }
+  5% {
+    left: 15%;
+    display: block;
+  }
+  40% {
+    left: 110%; 
+    display: block;
+  }
+  45% {
+    left: 110%; 
+    display: none;
+  }
+  55% {
+    left: 0%; 
+    display: none;
+  }
+  60% {
+    left: 0%; 
+    display: block;
+  }
+  95% {
+    left: 30%;
+    display: block;
+  }
+}

@@ -1,0 +1,71 @@
+.opening__video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.dark__blur {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0,0,0,.6);
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 15% 0;
+}
+
+h1, h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+}
+
+.opening__title {
+  font-size: 3rem;
+  text-transform: Uppercase;
+}
+
+.opening__subtitle { font-size: 1.5rem; }
+
+.coloring__container {
+
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.opening__coloring__box {
+  width: 90vw;
+  height: 30px;
+  background: var(--color-primary);
+  border-radius: 64px 64px 0 0;
+}
+
+.content__container {
+  width: 100%;
+  background: var(--color-bg);
+  border-radius: 64px 64px 0 0;
+  padding: 32px;
+}
+
+.contract {
+  background: #fff;
+}
