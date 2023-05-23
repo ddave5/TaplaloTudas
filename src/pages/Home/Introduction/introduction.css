@@ -6,12 +6,12 @@
   border-radius: 16px 0 0 16px;
   margin-top: 3rem;
   margin-bottom: 5rem;
+  width: 100%;
 }
 
 .text__container {
   text-align: justify;
-  font-size: clamp(1rem, 1.2rem, 2rem); 
- 
+  font-size: clamp(1rem, 1.5rem, 2rem);
 }
 
 .text__container p {
@@ -29,6 +29,29 @@
 }
 
 .intro__image {
-  width: 500px;
+  width: 80%;
   border-radius: 16px;
+  filter: drop-shadow(4px 4px 10px var(--color-primary));
+}
+
+@media screen and (max-width: 1024px) {
+
+  .text__container {
+    font-size: clamp(.8rem, 1.2rem, 1.5rem);
+  }
+
+  .introduction__container {
+    grid-template-columns: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__image {
+    width: 100%;
+  }
+
+  .text__container {
+    text-align: justify;
+    font-size: clamp(0.5rem, 0.8rem, 1rem);
+  }
 }

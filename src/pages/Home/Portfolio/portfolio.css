@@ -62,12 +62,12 @@
 }
 
 .healthy, .consultation, .examination{
-  stroke: var(--color-primary-alter);
+  stroke: var(--color-primary-variant);
   animation: shadowing .5s alternate forwards;
 }
 
 .icon_background , #circle-left, #circle-right-bottom, #circle-right-up {
-  stroke: var(--color-primary-alter);
+  stroke: var(--color-primary-variant);
   stroke-width: 3;
 }
 
@@ -86,13 +86,13 @@
 }
 
 @keyframes lightning {
-  0% { stroke:var(--color-primary-alter) }
-  100% { stroke: var(--color-primary-variant); 
-    filter: drop-shadow(0px 0px 3px var(--color-primary-variant));
+  0% { stroke:var(--color-primary-variant) }
+  100% { stroke: var(--color-primary); 
+    filter: drop-shadow(0px 0px 3px var(--color-primary));
   }
 }
 
 @keyframes shadowing {
-  0% { stroke: var(--color-primary-variant); }
-  100% { stroke: var(--color-primary-alter); }
+  0% { stroke: var(--color-primary-primary); }
+  100% { stroke: var(--color-primary-variant); }
 }
