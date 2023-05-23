@@ -11,7 +11,8 @@
 
 .text__container {
   text-align: justify;
-  font-size: clamp(1rem, 1.5rem, 2rem);
+  font-size: 1.2rem;
+  width: 80%;
 }
 
 .text__container p {
