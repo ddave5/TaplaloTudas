@@ -11,7 +11,7 @@ const Contact = () => {
 
     console.log(form.current);
 
-    //emailjs.sendForm('service_jqde9r4','template_q3sk3g9', form.current, 'dZ96iffI1Ryvowb67');
+    emailjs.sendForm('service_jqde9r4','template_q3sk3g9', form.current, 'dZ96iffI1Ryvowb67');
 
     document.getElementById('form')?.classList.add('refresh');
 
