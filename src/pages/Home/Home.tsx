@@ -25,11 +25,11 @@ const Home = () => {
         </div>
       </div>
        <div className="content__container">
-          <Introduction />
-          {/* <Portfolio /> */}
+           <Introduction />
+           <Portfolio /> 
       </div>
        <div className='contact'>
-        <Contact />
+         <Contact /> 
       </div> 
     </div>
   )

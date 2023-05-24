@@ -9,8 +9,9 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-}
 
+  /*background: rgb(0 100 0 / 0.05) !important;*/
+}
 :root {
   --color-font: #fff;
   --color-bg: #00334E;

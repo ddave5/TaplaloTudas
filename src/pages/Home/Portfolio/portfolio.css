@@ -1,11 +1,14 @@
 .portfolio__container {
-  display: flex;
-  justify-content: space-around;
-  gap: 10%;
+  display: grid;
+  grid-template-areas: 
+  'one   two two'
+  'three two two';
+  gap: 1rem;
 }
 
 .portfolio__intro {
-  width: 40%;
+  grid-area: one;
+  align-self: center;
 }
 
 .portfolio__intro .title {
@@ -19,51 +22,39 @@
 }
 
 .portfolio__carousel {
-  position: relative;
-}
-
-.carousel__text__container {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  letter-spacing: 10px;
+  grid-area: two;
+  align-self: center;
+  justify-self: center;
 }
 
 .portfolio__carousel__detail {
+  width: 60%;
   height: 30rem;
+  grid-area: three;
+  align-self: center;
+}
+
+.portfolio__carousel__detail .title, .portfolio__carousel__detail .detail {
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 .portfolio__carousel__detail .title {
   font-size: 24px;
-  opacity: 1;
-  transition: all 0.5s;
   margin-bottom: 1rem;
 }
-
-.portfolio__carousel__detail .title.hide{
-  opacity: 0;
-}
-
 .portfolio__carousel__detail .detail {
   font-size: 20px;
-  opacity: 1;
-  transition: all 0.5s;
 }
 
-.portfolio__carousel__detail .detail.hide{
+.portfolio__carousel__detail .title.hide, .portfolio__carousel__detail .detail.hide{
   opacity: 0;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
 }
 
 .healthy, .consultation, .examination{
   stroke: var(--color-primary-variant);
   animation: shadowing .5s alternate forwards;
+  transition: all 0.5s;
 }
 
 .icon_background , #circle-left, #circle-right-bottom, #circle-right-up {
@@ -77,7 +68,7 @@
 }
 
 .healthy.active , .consultation.active, .examination.active {
-  
+  transition: all 0.5s;
   animation: lightning .5s alternate forwards;
 }
 
@@ -95,4 +86,54 @@
 @keyframes shadowing {
   0% { stroke: var(--color-primary-primary); }
   100% { stroke: var(--color-primary-variant); }
+}
+
+@media screen and (max-width: 1024px) { 
+  .portfolio__container {
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+  }
+
+  .portfolio__intro .general {
+    font-size: clamp(.8rem, 1.2rem, 1.5rem);
+    margin-bottom: 0;
+  }
+
+  .portfolio__carousel__detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio__carousel__detail .detail{
+    text-align: justify;
+    font-size: clamp(.8rem, 1.2rem, 1.5rem);
+  }
+}
+
+
+@media screen and (max-width: 600px) { 
+  .portfolio__container {
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+  }
+
+  .portfolio__intro .general {
+    font-size: clamp(0.5rem, .8rem, 1rem);
+    margin-bottom: 0;
+  }
+
+  .portfolio__carousel__detail {
+    width: 100%;
+  }
+  .portfolio__carousel__detail .detail{
+    width: 100%;
+    padding-right: 20px;
+    text-align: justify;
+    font-size: clamp(0.5rem, .8rem, 1rem);
+  }
 }
