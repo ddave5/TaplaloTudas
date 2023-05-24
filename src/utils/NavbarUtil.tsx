@@ -1,5 +1,3 @@
-import React from 'react'
-
 class NavbarUtil {
   static scrollHideAndShow(element: HTMLElement): void {
     let prevScrollpos = window.pageYOffset;

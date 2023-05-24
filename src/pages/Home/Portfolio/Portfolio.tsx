@@ -119,8 +119,8 @@ const Portfolio = () => {
         </svg>}
       </div>
       <div className='portfolio__carousel__detail'>
-          <h3 id='carouselTitle' className='title'></h3>
-          <p id='carouselDetail' className='detail'></p>
+          <h3 id='carouselTitle' className='title'> </h3>
+          <p id='carouselDetail' className='detail'> </p>
       </div>
     </div>
   )

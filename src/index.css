@@ -14,10 +14,10 @@
 }
 :root {
   --color-font: #fff;
-  --color-bg: #00334E;
-  --color-bg-variant: #145374;
-  --color-primary: #EE6F57;
-  --color-primary-variant: #EE6F57;
+  --color-bg: #ff6666;
+  --color-bg-variant: #ff6666;
+  --color-primary: #fff;
+  --color-primary-variant: #fff;
 
   --transition: all 400ms ease;
 

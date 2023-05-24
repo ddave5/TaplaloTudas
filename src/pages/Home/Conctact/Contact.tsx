@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import './contact.css';
 import emailjs from 'emailjs-com';
+import Border from '../../../assets/images/portfolio/wave-haikei.svg';
 
 const Contact = () => {
 
@@ -24,6 +25,7 @@ const Contact = () => {
 
   return (
     <div className='contact__containter'>
+      {/* <div className='spacer layer1'> </div> */}
       <h5 className='subtitle'>Ha szeretne írni valamit</h5>
       <h2 className='title'>Kapcsolat</h2>
       <div className='postcard__container'>
