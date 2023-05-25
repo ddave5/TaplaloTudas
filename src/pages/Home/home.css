@@ -40,7 +40,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin: 20rem 0;
+  margin: 20rem 0 10rem 0;
 }
 
 h1, h2 {
@@ -68,6 +68,32 @@ h1, h2 {
 
 .contact {
   background: #fff;
+}
+
+.spacer {
+  aspect-ratio: 960 / 135;
+  width: 100%;
+}
+
+.layerIntroPortfolio {
+  background: url('../../assets/images/waves/wavePortfolio.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layerPortfolioContact {
+  background: url('../../assets/images/waves/waveContact.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layerIntro {
+  background: url('../../assets/images/waves/waveIntro.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1024px) {

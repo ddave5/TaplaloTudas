@@ -3,12 +3,15 @@
   grid-template-areas: 
   'one   two two'
   'three two two';
-  gap: 1rem;
+  gap: 5%;
+  background: var(--color-bg-variant);
+  grid-template-columns: 60% 15% 15%;
 }
 
 .portfolio__intro {
   grid-area: one;
   align-self: center;
+  padding-left: 10%;
 }
 
 .portfolio__intro .title {
@@ -28,15 +31,16 @@
 }
 
 .portfolio__carousel__detail {
-  width: 60%;
   height: 30rem;
   grid-area: three;
   align-self: center;
+  padding-left: 10%;
 }
 
 .portfolio__carousel__detail .title, .portfolio__carousel__detail .detail {
   opacity: 1;
   transition: all 0.5s;
+  text-align: justify;
 }
 
 .portfolio__carousel__detail .title {
@@ -94,6 +98,8 @@
     'one'
     'two'
     'three';
+    gap: 2%;
+    grid-template-columns: 100%;
   }
 
   .portfolio__intro .general {
@@ -106,6 +112,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10%;
   }
   .portfolio__carousel__detail .detail{
     text-align: justify;
@@ -113,13 +120,14 @@
   }
 }
 
-
 @media screen and (max-width: 600px) { 
   .portfolio__container {
     grid-template-areas: 
     'one'
     'two'
     'three';
+    gap: 2%;
+    grid-template-columns: 100%;
   }
 
   .portfolio__intro .general {
@@ -129,10 +137,10 @@
 
   .portfolio__carousel__detail {
     width: 100%;
+    padding: 0 10%;
   }
   .portfolio__carousel__detail .detail{
     width: 100%;
-    padding-right: 20px;
     text-align: justify;
     font-size: clamp(0.5rem, .8rem, 1rem);
   }

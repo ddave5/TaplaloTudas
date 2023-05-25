@@ -2,6 +2,7 @@
   text-align: center;
   padding: 5rem 0;
   color: var(--color-bg);
+  background: var(--color-primary);
 }
 
 /* .spacer {
@@ -17,12 +18,12 @@
 } */
 
 .contact__containter h2 {
-  color: var(--color-bg);
+  color: var(--color-bg-variant);
 }
 
 
 .contact__containter > .subtitle, .contact__containter > .title{
-  color: var(--color-bg);
+  color: var(--color-bg-variant);
 }
 
 .postcard__container {
@@ -64,7 +65,7 @@
   margin: .5rem;
   padding: 1rem;
   height: 50vh;
-  color: var(--color-bg);
+  color: var(--color-bg-variant);
   position: relative;
 }
 
@@ -78,7 +79,7 @@
 }
 
 .postcard__title {
-  color: var(--color-bg);
+  color: var(--color-bg-variant);
 }
 
 .postcard__content {
@@ -126,7 +127,7 @@
   width: 30%;
   padding: 10px;
   border-radius: 16px;
-  background: var(--color-bg);
+  background: var(--color-bg-variant);
   color: white;
   font-size: 20px;
 }

@@ -14,7 +14,7 @@
 }
 :root {
   --color-font: #fff;
-  --color-bg: #ff6666;
+  --color-bg: rgba(66, 13, 09, .7);
   --color-bg-variant: #ff6666;
   --color-primary: #fff;
   --color-primary-variant: #fff;

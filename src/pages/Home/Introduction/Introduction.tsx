@@ -4,6 +4,7 @@ import introPicture from '../../../assets/images/intro.jpg';
 
 const Introduction = () => {
   return (
+    <>
     <div className="introduction__container">
       <div className='image__container'>
         <img src={introPicture} alt='intro' className='intro__image'/>
@@ -17,6 +18,8 @@ const Introduction = () => {
         </p>
       </div>
     </div>
+    
+    </>
   )
 }
 

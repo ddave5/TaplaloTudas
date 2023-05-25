@@ -24,13 +24,12 @@ const Home = () => {
           <h2 className='opening__subtitle'>dietetikus</h2>
         </div>
       </div>
-       <div className="content__container">
-           <Introduction />
-           <Portfolio /> 
-      </div>
-       <div className='contact'>
-         <Contact /> 
-      </div> 
+      <div className='spacer layerIntro'/>
+      <Introduction />
+      <div className='spacer layerIntroPortfolio'/>
+      <Portfolio /> 
+      <div className='spacer layerPortfolioContact'/>
+      <Contact /> 
     </div>
   )
 }
