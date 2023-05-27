@@ -32,16 +32,16 @@ const Footer = () => {
             <div className='option__box footer__documents'>
               <h2>Doumentumok</h2>
               <ul>
-                <li><a href='#'>Impresszum</a></li>
-                <li><a href='#'>Adatvédelmi nyilatkozat</a></li>
-                <li><a href='#'>Szerzői jogi nyilatkozat</a></li>
+                <li><a href='#home'>Impresszum</a></li>
+                <li><a href='#home'>Adatvédelmi nyilatkozat</a></li>
+                <li><a href='#home'>Szerzői jogi nyilatkozat</a></li>
               </ul>
             </div>
             <div className='option__box footer__socials'>
               <ul>
-                <li><a href='#'><FaFacebookF /></a></li>
-                <li><a href='#'><FaInstagram/></a></li>
-                <li><a href='#'><FaLinkedin /></a></li>
+                <li><a href='#home'><FaFacebookF /></a></li>
+                <li><a href='#home'><FaInstagram/></a></li>
+                <li><a href='#home'><FaLinkedin /></a></li>
               </ul>
             </div>
           </div>

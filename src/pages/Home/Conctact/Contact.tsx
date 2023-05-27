@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import './contact.css';
 import emailjs from 'emailjs-com';
-import Border from '../../../assets/images/portfolio/wave-haikei.svg';
 
 const Contact = () => {
 
