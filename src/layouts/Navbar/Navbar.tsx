@@ -18,6 +18,7 @@ const Navbar = () => {
         navigation.classList.remove("active");
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   return (
