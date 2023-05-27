@@ -23,13 +23,14 @@ const Home = () => {
           <h1 className='opening__title'>Félegyházi Edina</h1>
           <h2 className='opening__subtitle'>dietetikus</h2>
         </div>
+        <div className='spacer layerIntro'/>
+        <Introduction />
+        <div className='spacer layerIntroPortfolio'/>
+        <Portfolio /> 
+        <div className='spacer layerPortfolioContact'/>
+        <Contact /> 
       </div>
-      <div className='spacer layerIntro'/>
-      <Introduction />
-      <div className='spacer layerIntroPortfolio'/>
-      <Portfolio /> 
-      <div className='spacer layerPortfolioContact'/>
-      <Contact /> 
+      
     </div>
   )
 }

@@ -10,8 +10,6 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log(form.current);
-
     emailjs.sendForm('service_jqde9r4','template_q3sk3g9', form.current, 'dZ96iffI1Ryvowb67');
 
     document.getElementById('form')?.classList.add('refresh');
@@ -25,7 +23,6 @@ const Contact = () => {
 
   return (
     <div className='contact__containter'>
-      {/* <div className='spacer layer1'> </div> */}
       <h5 className='subtitle'>Ha szeretne írni valamit</h5>
       <h2 className='title'>Kapcsolat</h2>
       <div className='postcard__container'>

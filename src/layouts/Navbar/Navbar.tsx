@@ -18,7 +18,7 @@ const Navbar = () => {
         navigation.classList.remove("active");
       }
     }
-  },[isActive])
+  },[])
 
   return (
     <nav id="nav" className={isActive ? null : "active"}>
